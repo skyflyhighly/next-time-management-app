@@ -72,7 +72,6 @@ export default function SchedulesProvider({
 
   const deleteSchedule = (schedule: Schedule) => {
     const newSchedules = schedules.filter((scheduleOne) => {
-      console.log(scheduleOne.id, schedule.id, scheduleOne.id !== schedule.id);
       return scheduleOne.id !== schedule.id;
     });
     newSchedules.sort((a, b) =>

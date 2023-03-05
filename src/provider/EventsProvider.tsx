@@ -47,10 +47,8 @@ export default function EventsProvider({ children }: { children: ReactNode }) {
 
   const deleteEvent = (event: Event) => {
     const newEvents = events.filter((eventOne) => {
-      console.log(eventOne.id, event.id, eventOne.id !== event.id);
       return eventOne.id !== event.id;
     });
-    console.log("s", event, newEvents);
 
     setEvents(newEvents);
   };

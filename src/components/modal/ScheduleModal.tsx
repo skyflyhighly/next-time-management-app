@@ -58,7 +58,6 @@ const ScheduleModal = (props: ModalProps) => {
   };
 
   const handleScheduleOk = () => {
-    console.log(schedule);
     if (!scheduleValidation(schedule)) return;
     setSchedule(defaultSchedule);
     setFiles([]);
